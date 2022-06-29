@@ -15,13 +15,14 @@ function validateForm() {
     if(!status || value == ""){
         warn.classList.remove("hide")
         warnMsg.classList.remove("hide")
+    } else{
+        warnMsg.textContent = "You will receive our notifications in your email."
+        warnMsg.classList.remove("hide")
+        warnMsg.classList.add("show")
     }
-    else{
-        warn.classList.add("hide")
-        warnMsg.classList.add("hide")
-    }
+
     setTimeout(() => {
         warn.classList.add("hide")
         warnMsg.classList.add("hide")
-    }, 2000)
+    }, 2500)
 }

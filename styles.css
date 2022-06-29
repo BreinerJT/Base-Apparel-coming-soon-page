@@ -85,14 +85,14 @@ span{
 .warn{
     position: absolute;
     right: 130px;
-    bottom: 10px;
+    bottom: 12px;
 }
 label{
     color: var(--soft-red);
     position: absolute;
-    left: 3rem;
-    padding: 0.5rem;
+    left: 4rem;
     bottom: -2rem;
+    padding: 0.5rem;
 }
 @media screen and (min-width: 860px) {
     section{
@@ -126,6 +126,9 @@ label{
         width: 40%;
         height: auto;
     }
+    label{
+        left: 1rem;
+    }
     .form{
         position: relative;
     }
@@ -137,7 +140,7 @@ label{
         right: calc(100% - 450px);
     }
     .warn{
-        right: calc(100% - 300px);
+        right: calc(100% - 340px);
     }
     .mobile-logo{
         display: none;
@@ -148,4 +151,7 @@ label{
 }
 .hide{
     display: none;
+}
+.show{
+    color: var(--desaturated-red);
 }
